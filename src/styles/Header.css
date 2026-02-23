@@ -1,0 +1,141 @@
+.header-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 25vh;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto 0;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.foto {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.foto-container {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-container {
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.info-pessoais {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.info-pessoais-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.lista-contatos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.contatos-campos {
+  color: rgb(182, 63, 180);
+  min-width: 60px;
+}
+
+.info-contatos-campos {
+  color: white;
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .header-container {
+    justify-content: center;
+    gap: 4rem;
+  }
+  
+  .info-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .foto-container {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .foto {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .info-container {
+    margin-right: 0;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .info-pessoais {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .info-pessoais span {
+    text-align: center;
+  }
+
+  .info-pessoais-container {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .foto {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .info-container {
+    width: 95%;
+  }
+}

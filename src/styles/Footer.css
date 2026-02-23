@@ -1,0 +1,136 @@
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;  /* Aumentei para caber o gap grande */
+    margin: 0 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.responsive-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-message p {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-link {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #cccccc;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-copyright h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+    white-space: nowrap; 
+}
+
+.footer-copyright p {
+    margin: 0;
+    color: #999;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+    .responsive-container {
+        gap: 10rem;  
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+        min-height: 20vh;
+        padding: 2rem 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 2rem;
+    }
+
+    .responsive-container {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-message p {
+        font-size: 1.1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .footer-link {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .footer-copyright h2,
+    .footer-copyright p {
+        white-space: normal;  /* Permite quebrar linha no mobile */
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+    .footer-container {
+        margin: 0 1rem;
+    }
+    
+    .responsive-container {
+        gap: 1.5rem;
+    }
+}

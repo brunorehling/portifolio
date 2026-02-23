@@ -1,0 +1,60 @@
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.contato-container h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.contato-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(16, 16, 41);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contato-item:hover {
+  background-color: rgb(182, 63, 180);
+  transform: translateX(5px);
+  border-color: rgb(182, 63, 180);
+}
+
+.contato-item svg {
+  color: rgb(182, 63, 180);
+}
+
+.contato-item:hover svg {
+  color: white;
+}
+
+.titulo{
+    color: white;
+}
+
+@media (max-width: 960px) {
+    .contato-links{
+      flex-direction: column;
+    }
+
+}
