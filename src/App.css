@@ -1,12 +1,41 @@
+html {
+  background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(18, 18, 54));
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(18, 18, 54));
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+/* Simplifica as media queries já que é o mesmo gradiente */
+@media (min-width: 768px) and (max-width: 1200px) {
+  body {
+    background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(18, 18, 54));
+  }
+}
+
 body {
   background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(18, 18, 54));
   margin: 0;  
-  min-height: 100vh;
+  min-height: 100%;
+  min-width: 100%;
 }
 
-@media (max-width: 768px) {
-  body {
+@media (min-width: 768px) and (max-width: 1200px){
+  body{
+    background-size: cover;
+    background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(18, 18, 54));
+  }
+}
 
+@media (max-width: 900px) {
+  body {
+    background-size: cover;
     background: linear-gradient(to bottom, rgb(8, 8, 8), rgb(18, 18, 54));
   }
 }

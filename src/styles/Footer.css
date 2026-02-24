@@ -13,7 +13,7 @@
 .footer-container {
     display: flex;
     width: 100%;
-    max-width: 1400px;  /* Aumentei para caber o gap grande */
+    max-width: 2000px;  
     margin: 0 5rem;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20rem;
 }
 
 .footer-message p {
@@ -120,11 +121,10 @@
 
     .footer-copyright h2,
     .footer-copyright p {
-        white-space: normal;  /* Permite quebrar linha no mobile */
+        white-space: normal; 
     }
 }
 
-/* Mobile pequeno */
 @media (max-width: 480px) {
     .footer-container {
         margin: 0 1rem;
